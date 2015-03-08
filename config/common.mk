@@ -155,13 +155,10 @@ PRODUCT_COPY_FILES += \
 	vendor/liquid/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
 	vendor/liquid/prebuilt/etc/hosts.og:system/etc/hosts.og
 
-# statistics identity
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.romstats.url=http://stats.liquidsmooth.net/ \
-    ro.romstats.name=LiquidSmooth \
-    ro.romstats.version=$(LIQUID_VERSION) \
-    ro.romstats.askfirst=0 \
-    ro.romstats.tframe=1
+# Chromium Prebuilt
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
