@@ -155,11 +155,6 @@ PRODUCT_COPY_FILES += \
 	vendor/liquid/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
 	vendor/liquid/prebuilt/etc/hosts.og:system/etc/hosts.og
 
-# Chromium Prebuilt
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
-endif
-
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.liquid.version=$(LIQUID_VERSION)
