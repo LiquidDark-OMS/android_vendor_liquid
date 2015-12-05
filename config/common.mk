@@ -75,6 +75,27 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.layers.noIcon=noIcon
 
+# SkyBlue_Night Layers
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-calculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-calculator-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-cell-broadcast.apk:system/vendor/overlay/SkyBlue_Night-cell-broadcast.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-contacts-overlay.apk:system/vendor/overlay/SkyBlue_Night-contacts-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-dialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-dialer-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-framework-res-overlay.apk:system/vendor/overlay/SkyBlue_Night-framework-res-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GMail-overlay.apk:system/vendor/overlay/SkyBlue_Night-GMail-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleContacts-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleContacts-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleDialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleDialer-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-Google-now-overlay.apk:system/vendor/overlay/SkyBlue_Night-Google-now-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-hangouts-overlay.apk:system/vendor/overlay/SkyBlue_Night-hangouts-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-messanger-overlay.apk:system/vendor/overlay/SkyBlue_Night-messanger-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-phone-overlay.apk:system/vendor/overlay/SkyBlue_Night-phone-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-PlayStore-overlay.apk:system/vendor/overlay/SkyBlue_Night-PlayStore-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-server-telecom-overlay.apk:system/vendor/overlay/SkyBlue_Night-server-telecom-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-settings-overlay.apk:system/vendor/overlay/SkyBlue_Night-settings-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-systemUI-overlay.apk:system/vendor/overlay/SkyBlue_Night-systemUI-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-youtube-overlay.apk:system/vendor/overlay/SkyBlue_Night-youtube-overlay.apk
+
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
