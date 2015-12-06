@@ -117,11 +117,11 @@ device="$1"
 eval $(grep "^LIQUID_VERSION_" vendor/liquid/config/common.mk | sed 's/ *//g')
 VERSION="$LIQUID_VERSION_MAJOR.$LIQUID_VERSION_MINOR.$LIQUID_VERSION_MAINTENANCE"
 
-echo -e ${cya}"Building ${ppl}Liquidsmooth ${bldylw}$VERSION"${txtrst}
+echo -e ${cya}"Building ${ppl}LiquidDark ${bldylw}$VERSION"${txtrst}
 
 if [ "$opt_clean" -eq 1 ]; then
     echo -e ""
-    echo -e ${bldblu}"Building LiquidSmooth"${txtrst}
+    echo -e ${bldblu}"Building LiquidDark"${txtrst}
     echo -e ""
 elif [ "$opt_clean" -eq 2 ]; then
     make clean >/dev/null
