@@ -62,6 +62,15 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/liquid/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/bin/audio_policy.sh:install/bin/audio_policy.sh \
+    vendor/liquid/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
+    vendor/liquid/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/liquid/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
+    vendor/liquid/prebuilt/common/su.d//15v4a.sh:system/su.d/15v4a.sh \
+    vendor/liquid/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
+
 # Layers
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/Layers.apk:system/app/Layers/Layers.apk \
@@ -119,6 +128,8 @@ PRODUCT_PACKAGES += \
     Terminal \
     LockClock \
     AudioFX \
+    Viper4Android \
+    LayersManager \
     KernelAdiutor
 
 # Extra tools
