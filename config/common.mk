@@ -129,7 +129,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     AudioFX \
     Viper4Android \
-    LayersManager \
     KernelAdiutor
 
 # Extra tools
