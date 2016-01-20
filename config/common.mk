@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     DashClock \
     DeskClock \
     Terminal \
+    Viper4Android \
     KernelAdiutor
 
 # Extra tools
