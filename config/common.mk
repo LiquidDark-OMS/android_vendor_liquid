@@ -119,16 +119,11 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     SlimLauncher \
-    Apollo \
-    CMFileManager \
     LatinIME \
     BluetoothExt \
     DashClock \
     DeskClock \
     Terminal \
-    LockClock \
-    AudioFX \
-    Viper4Android \
     KernelAdiutor
 
 # Extra tools
