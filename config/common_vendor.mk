@@ -88,12 +88,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-calculator-overlay.apk:vendor/overlay/SkyBlue_Night-calculator-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-cell-broadcast.apk:vendor/overlay/SkyBlue_Night-cell-broadcast.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-contacts-overlay.apk:vendor/overlay/SkyBlue_Night-contacts-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-dialer-overlay.apk:vendor/overlay/SkyBlue_Night-dialer-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-framework-res-overlay.apk:vendor/overlay/SkyBlue_Night-framework-res-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GMail-overlay.apk:vendor/overlay/SkyBlue_Night-GMail-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk:vendor/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleContacts-overlay.apk:vendor/overlay/SkyBlue_Night-GoogleContacts-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleDialer-overlay.apk:vendor/overlay/SkyBlue_Night-GoogleDialer-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-Google-now-overlay.apk:vendor/overlay/SkyBlue_Night-Google-now-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-hangouts-overlay.apk:vendor/overlay/SkyBlue_Night-hangouts-overlay.apk \
