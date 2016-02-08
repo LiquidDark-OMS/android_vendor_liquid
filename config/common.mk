@@ -84,31 +84,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.layers.noIcon=noIcon
 
-# AzureFree Layers
+# SkyBlue_Night Layers
 PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_browser.apk:system/vendor/overlay/AzureFree_browser.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_cellbroadcastreceiver.apk:system/vendor/overlay/AzureFree_cellbroadcastreceiver.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_contacts.apk:system/vendor/overlay/AzureFree_contacts.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_deskclock.apk:system/vendor/overlay/AzureFree_deskclock.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_dialer.apk:system/vendor/overlay/AzureFree_dialer.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_documentsui.apk:system/vendor/overlay/AzureFree_documentsui.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_framework-res.apk:system/vendor/overlay/AzureFree_framework-res.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_gmail.apk:system/vendor/overlay/AzureFree_gmail.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_googlecontacts.apk:system/vendor/overlay/AzureFree_googlecontacts.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_googledialer.apk:system/vendor/overlay/AzureFree_googledialer.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_googlemms.apk:system/vendor/overlay/AzureFree_googlemms.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_googlenow.apk:system/vendor/overlay/AzureFree_googlenow.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_googleplus.apk:system/vendor/overlay/AzureFree_googleplus.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_hangouts.apk:system/vendor/overlay/AzureFree_hangouts.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_packageinstaller.apk:system/vendor/overlay/AzureFree_packageinstaller.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_phone.apk:system/vendor/overlay/AzureFree_phone.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_settings.apk:system/vendor/overlay/AzureFree_settings.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_supersu.apk:system/vendor/overlay/AzureFree_supersu.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_systemui.apk:system/vendor/overlay/AzureFree_systemui.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_telecom.apk:system/vendor/overlay/AzureFree_telecom.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_teleservice.apk:system/vendor/overlay/AzureFree_teleservice.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_whatsapp.apk:system/vendor/overlay/AzureFree_whatsapp.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/AzureFree_youtube.apk:system/vendor/overlay/AzureFree_youtube.apk
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-calculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-calculator-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-cell-broadcast.apk:system/vendor/overlay/SkyBlue_Night-cell-broadcast.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-dialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-dialer-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-framework-res-overlay.apk:system/vendor/overlay/SkyBlue_Night-framework-res-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GMail-overlay.apk:system/vendor/overlay/SkyBlue_Night-GMail-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleDialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleDialer-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-Google-now-overlay.apk:system/vendor/overlay/SkyBlue_Night-Google-now-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-hangouts-overlay.apk:system/vendor/overlay/SkyBlue_Night-hangouts-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-messanger-overlay.apk:system/vendor/overlay/SkyBlue_Night-messanger-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-phone-overlay.apk:system/vendor/overlay/SkyBlue_Night-phone-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-PlayStore-overlay.apk:system/vendor/overlay/SkyBlue_Night-PlayStore-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-server-telecom-overlay.apk:system/vendor/overlay/SkyBlue_Night-server-telecom-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-settings-overlay.apk:system/vendor/overlay/SkyBlue_Night-settings-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-systemUI-overlay.apk:system/vendor/overlay/SkyBlue_Night-systemUI-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-youtube-overlay.apk:system/vendor/overlay/SkyBlue_Night-youtube-overlay.apk
 
 # Required packages
 PRODUCT_PACKAGES += \
