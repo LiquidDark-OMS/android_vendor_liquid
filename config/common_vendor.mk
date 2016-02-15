@@ -136,11 +136,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SlimLauncher \
     LatinIME \
+    LatinImeDictionaryPack \
+    libemoji \
+    LockClock \
+    messaging \
+    Screencast \
     BluetoothExt \
+    Busybox \
     DashClock \
     DeskClock \
     Terminal \
-    LockClock \
     Viper4Android \
     KernelAdiutor
 
