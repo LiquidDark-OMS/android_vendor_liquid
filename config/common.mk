@@ -53,6 +53,19 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
+# Audio
+$(call inherit-product-if-exists, frameworks/base/data/sounds/OldAudio.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/NewAudio.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackageStars.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackageNewWave.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackageElements.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage8.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage9.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage10.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage11.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12.mk)
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12_48.mk)
+
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
