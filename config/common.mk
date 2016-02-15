@@ -40,9 +40,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.local.rc:root/init.slim.rc
 
-# Copy latinime for gesture typing
+# LatinIME swyping support
+ifneq ($(filter angler flounder h811, $(TARGET_DEVICE)),)
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/lib/libjni_latinimegoogle64.so:system/lib64/libjni_latinimegoogle.so
+else
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+endif
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
