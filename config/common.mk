@@ -114,6 +114,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/Kerneladiutor.apk:system/app/Auditor/Kerneladiutor.apk
 
+# Wallpapers
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/etc/Wallpapers.apk:system/app/Wallpapers/Wallpapers.apk
+
 # No Icon for Layers App
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.layers.noIcon=noIcon
