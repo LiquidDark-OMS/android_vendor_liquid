@@ -124,6 +124,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SkyBlue_Night Layers
 PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/etc/overlay/ChromeNav.apk:system/vendor/overlay/ChromeNav.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-calculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-calculator-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-cell-broadcast.apk:system/vendor/overlay/SkyBlue_Night-cell-broadcast.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-dialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-dialer-overlay.apk \
