@@ -19,6 +19,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+    
+# X-Reality
+   PRODUCT_PROPERTY_OVERRIDES += \
+   ro.service.swiqi.supported = true \
+   persist.service.swiqi.enable = 1 \
+   ro.service.swiqi2.supported = true \
+   persist.service.swiqi2.enable = 1 \
+   ro.service.swiqi3.supported = true \
+   persist.service.swiqi3.enable = 1    
 
 # Disable excessive dalvik debug messages
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -48,6 +57,13 @@ else
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 endif
+
+# Sony Bravia
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/common/etc/be_movie:system/etc/be_movie \
+    vendor/liquid/prebuilt/common/etc/be_photo:system/etc/be_photp \
+    vendor/liquid/prebuilt/common/framework/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
+    vendor/liquid/prebuilt/common/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permission/com.sonyericsson.android.SwIqiBmp.xml
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
