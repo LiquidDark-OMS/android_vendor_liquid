@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/be_movie:system/etc/be_movie \
     vendor/liquid/prebuilt/common/etc/be_photo:system/etc/be_photp \
     vendor/liquid/prebuilt/common/framework/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
-    vendor/liquid/prebuilt/common/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permission/com.sonyericsson.android.SwIqiBmp.xml
+    vendor/liquid/prebuilt/common/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
