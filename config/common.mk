@@ -122,25 +122,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.layers.noIcon=noIcon
 
-# SkyBlue_Night Layers
+# Layers
 PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/etc/overlay/ChromeNav.apk:system/vendor/overlay/ChromeNav.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-calculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-calculator-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-cell-broadcast.apk:system/vendor/overlay/SkyBlue_Night-cell-broadcast.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-dialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-dialer-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-framework-res-overlay.apk:system/vendor/overlay/SkyBlue_Night-framework-res-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GMail-overlay.apk:system/vendor/overlay/SkyBlue_Night-GMail-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleDialer-overlay.apk:system/vendor/overlay/SkyBlue_Night-GoogleDialer-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-Google-now-overlay.apk:system/vendor/overlay/SkyBlue_Night-Google-now-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-hangouts-overlay.apk:system/vendor/overlay/SkyBlue_Night-hangouts-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-messanger-overlay.apk:system/vendor/overlay/SkyBlue_Night-messanger-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-phone-overlay.apk:system/vendor/overlay/SkyBlue_Night-phone-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-PlayStore-overlay.apk:system/vendor/overlay/SkyBlue_Night-PlayStore-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-server-telecom-overlay.apk:system/vendor/overlay/SkyBlue_Night-server-telecom-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-settings-overlay.apk:system/vendor/overlay/SkyBlue_Night-settings-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-systemUI-overlay.apk:system/vendor/overlay/SkyBlue_Night-systemUI-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-youtube-overlay.apk:system/vendor/overlay/SkyBlue_Night-youtube-overlay.apk
+    vendor/liquid/prebuilt/common/etc/overlay/Cellbroadcastreceiver.apk:system/vendor/overlay/Cellbroadcastreceiver.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Contacts.apk:system/vendor/overlay/Contacts.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Dialer.apk:system/vendor/overlay/Dialer.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/DocumentsUI.apk:system/vendor/overlay/DocumentsUI.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Frameworkres.apk:system/vendor/overlay/Frameworkres.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Gmail.apk:system/vendor/overlay/Gmail.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/GoogleContacts.apk:system/vendor/overlay/GoogleContacts.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/GoogleDialer.apk:system/vendor/overlay/GoogleDialer.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/GoogleKeyboard.apk:system/vendor/overlay/GoogleKeyboard.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/GooglePlus.apk:system/vendor/overlay/GooglePlus.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Hangouts.apk:system/vendor/overlay/Hangouts.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/LatinIME.apk:system/vendor/overlay/LatinIME.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Phone.apk:system/vendor/overlay/Phone.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Settings.apk:system/vendor/overlay/Settings.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/SystemUi.apk:system/vendor/overlay/SystemUi.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Whatsapp.apk:system/vendor/overlay/Whatsapp.apk
 
 # Required packages
 PRODUCT_PACKAGES += \
