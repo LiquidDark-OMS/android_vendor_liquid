@@ -140,6 +140,10 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-server-telecom-overlay.apk:system/vendor/overlay/SkyBlue_Night-server-telecom-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-settings-overlay.apk:system/vendor/overlay/SkyBlue_Night-settings-overlay.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-systemUI-overlay.apk:system/vendor/overlay/SkyBlue_Night-systemUI-overlay.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/AOSPKeyboard.apk:system/vendor/overlay/AOSPKeyboard.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Framework+.apk:system/vendor/overlay/Framework+.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Settings+.apk:system/vendor/overlay/Settings+.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Systemui+.apk:system/vendor/overlay/Systemui+.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-youtube-overlay.apk:system/vendor/overlay/SkyBlue_Night-youtube-overlay.apk
 
 # Required packages
