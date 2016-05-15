@@ -144,6 +144,9 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/overlay/Framework+.apk:vendor/overlay/Framework+.apk \
     vendor/liquid/prebuilt/common/etc/overlay/Settings+.apk:vendor/overlay/Settings+.apk \
     vendor/liquid/prebuilt/common/etc/overlay/Systemui+.apk:vendor/overlay/Systemui+.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/Background+.apk:vendor/overlay/Background+.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/GooglePlayStore+.apk:vendor/overlay/GooglePlayStore+.apk \
+    vendor/liquid/prebuilt/common/etc/overlay/N_Style_Notifications+.apk:vendor/overlay/N_Style_Notifications+.apk \
     vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-youtube-overlay.apk:vendor/overlay/SkyBlue_Night-youtube-overlay.apk
 
 # Required packages
