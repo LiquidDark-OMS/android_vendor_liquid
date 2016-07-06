@@ -45,9 +45,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
-# SLIM-specific init file
+# Specific init file
 PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/etc/init.local.rc:root/init.slim.rc
+    vendor/liquid/prebuilt/common/etc/init.local.rc:root/init.xenonhd.rc
 
 # LatinIME swyping support
 ifneq ($(filter angler flounder h811, $(TARGET_DEVICE)),)
