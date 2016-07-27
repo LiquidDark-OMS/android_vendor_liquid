@@ -105,11 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/su.d//15v4a.sh:system/su.d/15v4a.sh \
     vendor/liquid/prebuilt/common/vendor/etc/audio_effects.conf:vendor/etc/audio_effects.conf
 
-# Layers
-PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/etc/Layers.apk:system/app/Layers/Layers.apk \
-	vendor/liquid/prebuilt/common/etc/Layersbackup.apk:system/app/Layersbackup/Layersbackup.apk
-
 # Kernel Auditor
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/Kerneladiutor.apk:system/app/Auditor/Kerneladiutor.apk
@@ -117,30 +112,6 @@ PRODUCT_COPY_FILES += \
 # Wallpapers
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/Wallpapers.apk:system/app/Wallpapers/Wallpapers.apk
-
-# No Icon for Layers App
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.layers.noIcon=noIcon
-
-# SkyBlue_Night Layers
-PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/etc/overlay/ChromeNav.apk:vendor/overlay/ChromeNav.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-calculator-overlay.apk:vendor/overlay/SkyBlue_Night-calculator-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-cell-broadcast.apk:vendor/overlay/SkyBlue_Night-cell-broadcast.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-dialer-overlay.apk:vendor/overlay/SkyBlue_Night-dialer-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-framework-res-overlay.apk:vendor/overlay/SkyBlue_Night-framework-res-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GMail-overlay.apk:vendor/overlay/SkyBlue_Night-GMail-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk:vendor/overlay/SkyBlue_Night-GoogleCalculator-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-GoogleDialer-overlay.apk:vendor/overlay/SkyBlue_Night-GoogleDialer-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-Google-now-overlay.apk:vendor/overlay/SkyBlue_Night-Google-now-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-hangouts-overlay.apk:vendor/overlay/SkyBlue_Night-hangouts-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-messanger-overlay.apk:vendor/overlay/SkyBlue_Night-messanger-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-phone-overlay.apk:vendor/overlay/SkyBlue_Night-phone-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-PlayStore-overlay.apk:vendor/overlay/SkyBlue_Night-PlayStore-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-server-telecom-overlay.apk:vendor/overlay/SkyBlue_Night-server-telecom-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-settings-overlay.apk:vendor/overlay/SkyBlue_Night-settings-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-systemUI-overlay.apk:vendor/overlay/SkyBlue_Night-systemUI-overlay.apk \
-    vendor/liquid/prebuilt/common/etc/overlay/SkyBlue_Night-youtube-overlay.apk:vendor/overlay/SkyBlue_Night-youtube-overlay.apk
 
 # Required packages
 PRODUCT_PACKAGES += \
@@ -168,7 +139,8 @@ PRODUCT_PACKAGES += \
     DeskClock \
     Terminal \
     Viper4Android \
-    KernelAdiutor
+    KernelAdiutor \
+    masquerade
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -208,14 +180,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/liquid/overlay/common
 RELEASE = false
 LIQUID_VERSION_MAJOR = 6
 LIQUID_VERSION_MINOR = 0
-#LIQUID_VARIANT = layers
+LIQUID_VARIANT = OMS
 
 # release
 ifeq ($(RELEASE),true)
     LIQUID_VERSION := LD-MM-MileStone-$(LIQUID_VERSION_MAJOR).$(LIQUID_VERSION_MINOR)-$(LIQUID_VARIANT)
 else
     LIQUID_VERSION_STATE := $(shell date +%Y%m%d-%H%M)
-    LIQUID_VERSION := LD-MM-$(LIQUID_VERSION_STATE)
+    LIQUID_VERSION := LD-MM-$(LIQUID_VARIANT)-$(LIQUID_VERSION_STATE)
 endif
 
 # Chromium Prebuilt
