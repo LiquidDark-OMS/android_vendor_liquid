@@ -72,6 +72,10 @@ PRODUCT_COPY_FILES += \
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+    
+# Backup Services whitelist
+PRODUCT_COPY_FILES += \
+    vendor/liquid/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml    
 
 # Audio
 $(call inherit-product-if-exists, frameworks/base/data/sounds/OldAudio.mk)
