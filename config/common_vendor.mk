@@ -174,6 +174,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
+    
+# Charger
+ifneq ($(WITH_CM_CHARGER),false)
+    BOARD_HAL_STATIC_LIBRARIES := libhealthd.cm
+endif
+
+# Custom off-mode charger
+ifneq ($(WITH_CM_CHARGER),false)
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    cm_charger_res_images \
+    font_log.png \
+    libhealthd.cm
+endif    
 
 # Root access on by default
 PRODUCT_PROPERTY_OVERRIDES += \
