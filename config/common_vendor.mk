@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     Screencast \
     BluetoothExt \
     Busybox \
-    DashClock \
+    OmniSwitch \
     DeskClock \
     Terminal \
     Viper4Android \
