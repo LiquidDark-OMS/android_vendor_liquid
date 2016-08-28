@@ -65,10 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/framework/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
     vendor/liquid/prebuilt/common/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml
 
-# Substratum Theme Engine    
-PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/etc/projekt.substratum.apk:system/app/Substratum/Substratum.apk    
-
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
@@ -148,8 +144,9 @@ PRODUCT_PACKAGES += \
     Terminal \
     Viper4Android \
     KernelAdiutor \
-    masquerade
-
+    masquerade \
+    substratum
+    
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
@@ -189,9 +186,13 @@ PRODUCT_PACKAGES += \
     libhealthd.cm
 endif    
 
-# Root access on by default
-PRODUCT_PROPERTY_OVERRIDES += \
+# Enable ADB authentication and root
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
     persist.sys.root_access=1
+endif
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk

@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
     Terminal \
     Viper4Android \
     KernelAdiutor \
-    masquerade
+    masquerade \
+    substratum
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -189,9 +190,13 @@ PRODUCT_PACKAGES += \
     libhealthd.cm
 endif    
 
-# Root access on by default
-PRODUCT_PROPERTY_OVERRIDES += \
+# Enable ADB authentication and root
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
     persist.sys.root_access=1
+endif
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
