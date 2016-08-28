@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/bin/50-liquid.sh:system/addon.d/50-liquid.sh \
     vendor/liquid/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/liquid/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    
+# Blobs common to all devices
+PRODUCT_COPY_FILES += \
+vendor/liquid/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf    
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \

@@ -86,6 +86,10 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage11.mk)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12.mk)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12_48.mk)
 
+# Blobs common to all devices
+PRODUCT_COPY_FILES += \
+vendor/liquid/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
+
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
