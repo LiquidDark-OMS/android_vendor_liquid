@@ -152,9 +152,8 @@ PRODUCT_PACKAGES += \
     Terminal \
     Viper4Android \
     KernelAdiutor \
-    masquerade \
-    substratum
-
+    masquerade
+    
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
